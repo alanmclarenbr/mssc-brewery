@@ -1,4 +1,4 @@
-package guru.springframework.msscbrewery.web.model;
+package guru.springframework.msscbrewery.web.model.v2;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Null;
@@ -14,17 +14,13 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerDto {
-
+public class BeerDtoV2 {
     @Null
     private UUID id;
-
     @NotBlank
     private String beerName;
-
     @NotBlank
-    private String beerStyle;
-
+    private BeerStyleEnum beerStyle;
     @Positive
     private Long upc;
 }
