@@ -21,8 +21,13 @@ import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.OK;
 
+/**
+ * @deprecated new version available
+ * @see guru.springframework.msscbrewery.web.controller.v2.BeerControllerV2
+ */
 @RequestMapping("/api/v1/beer")
 @RestController
+@Deprecated
 public class BeerController {
 
     private final BeerService beerService;
